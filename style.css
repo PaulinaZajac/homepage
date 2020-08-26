@@ -4,18 +4,44 @@ body {
 h1{
     color: #1B998B;
     }
-p { 
- color: #C57B57;
+
+
+.header {
+    background: #0A0908;
+    min-width: 1000px;
+    padding: 20px 20px;
+    border: 1px dotted;
+    margin: 35px;
+    
+
+}
+.secondary-header {
+    
+    padding: 5px 5px;
+    margin: 35px;
+    
+}
+
+.navigation {
+    border: 1px solid;
+    border-color: #943b85;
+    padding: 40px 20px;
+
+}
+
+.navigation__link {
+    color: #1B998B;
+    margin-right: 90px;
+    
+}
+ .navigation__link--homepage {
+    color: #8fe9de;
+    
  }
 
-
-nav a {
-    color:#943b85
-}
-
-.top {
-    background:#BF9ACA
-}
-.top {
-    color:#E3E4DB
+.content {
+    box-sizing: border-box;
+    min-width: 1000px;
+    padding: 5px 5px;
+    margin: 35px;
 }
