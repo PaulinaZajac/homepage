@@ -1,101 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HELLO</title>
     <link href="style.css" rel="stylesheet" type"text/css">
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="navigation">
-            <a class="navigation__link" href="nauka-html.html">O mnie</a>
-            <a class="navigation__link" href="historia.html">Historia</a>
-        </nav>
+      <nav class="navigation">
+        <a class="navigation__link" href="nauka-html.html">O mnie</a>
+        <a class="navigation__link" href="historia.html">Historia</a>
+      </nav>
     </header>
-    <main>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">HELLO</h1>
+      </header>
+      <section class="content">
+        <h2 class="content__heading">First Steps</h2>
+        <p class="content__content">
+          To get the most out of Visual Studio Code, start by reviewing a few
+          introductory topics: Intro Videos - Begin your journey with VS Code
+          through these introductory videos.
 
-        <header class="secondary-header">
-            <h1>HELLO</h1>
-        </header>
-        <section class="content">
-            <h2>
-                <i>
-                    First Steps
-                </i>
-                </h2>
-            <p>
+          <br />Setup - Install VS Code for your platform and configure the tool
+          set for your development needs. User Interface - Introduction to the
+          basic UI, commands, and features of the VS Code editor. Settings -
+          Customize VS Code for how you like to work.
 
-                To get the most out of Visual Studio Code, start by reviewing a few introductory topics:
+          <br />Languages - Learn about VS Code's support for your favorite
+          programming languages. Node.js - This tutorial gets you quickly
+          running and debugging a Node.js web app.
 
-                Intro Videos - Begin your journey with VS Code through these introductory videos.
-
-                <br>Setup - Install VS Code for your platform and configure the tool set for your development needs.
-
-                User Interface - Introduction to the basic UI, commands, and features of the VS Code editor.
-
-                Settings - Customize VS Code for how you like to work.
-
-                <br>Languages - Learn about VS Code's support for your favorite programming languages.
-
-                Node.js - This tutorial gets you quickly running and debugging a Node.js web app.
-
-                <br>Tips and Tricks - Jump right in with Tips and Tricks to become a VS Code power user.
-
-                Azure - VS Code is great for deploying your web applications to the cloud.
-
-                Extension API - Learn how to write a VS Code extension. <a href="#notatki">Przejdź do notatek</a>
-            </p>
-
-        </section>
-        <section id="notatki" class="content">
-
-            <h2>
-                Why VS Code? - Read about the design philosophy and architecture of VS Code.
-            </h2>
-            <h3>
-                Keyboard Shortcuts
-            </h3>
-            <p>
-
-                Increase your productivity with VS Code's keyboard shortcuts.
-            </p>
-            Keyboard Shortcut Reference Sheet - Learn the commonly used keyboard shortcuts.
-
-            Keymap Extensions - Change VS Code's keyboard shortcuts to match another editor.
-
-            Customize Keyboard Shortcuts - Modify the default keyboard shortcuts.
-        </section>
-        <section class="content">
-            <h3>
-                Downloads
-            </h3>
-            Download VS Code - Quickly find the appropriate install for your platform (Windows, macOS and Linux)
-
-            <h3>
-                Privacy
-            </h3>
-            By default, VS Code auto-updates to new versions, and collects usage data and crash report information. You
-            may opt out of these defaults by disabling them as instructed below:
-
-            <p>
-                How do I disable auto update?
-            </p>
-
-            <p>
-                How do I disable crash reporting?
-            </p>
-            <p>
-                How do I disable usage reporting?
-            </p>
-            <h3 class="third-heading--js"></h3>
-        </section>
-    </main>
-    <script src="main.js">
+          <br />Tips and Tricks - Jump right in with Tips and Tricks to become a
+          VS Code power user. Azure - VS Code is great for deploying your web
+          applications to the cloud. Extension API - Learn how to write a VS
+          Code extension.
+          <a class="content__link" href="#notatki">Przejdź do notatek</a>
+        </p>
+      </section>
+      <section id="notatki" class="content">
+        <h2 class="content__heading">
+          Why VS Code? - Read about the design philosophy and architecture of VS
+          Code.
+        </h2>
+        <h3 class="content__heading">Keyboard Shortcuts</h3>
+        <p class="content__content">
+          Increase your productivity with VS Code's keyboard shortcuts.
         
-    </script>
-</body>
+        Keyboard Shortcut Reference Sheet - Learn the commonly used keyboard
+        shortcuts. Keymap Extensions - Change VS Code's keyboard shortcuts to
+        match another editor. Customize Keyboard Shortcuts - Modify the default
+        keyboard shortcuts.
+    </p>
+        <h3 class="content__heading">Downloads</h3>
+        <p class="content__content">
+        Download VS Code - Quickly find the appropriate install for your
+        platform (Windows, macOS and Linux)
+    </p>
+        <h3 class="content__heading">Privacy</h3>
+        <p class="content__content">
+        By default, VS Code auto-updates to new versions, and collects usage
+        data and crash report information. You may opt out of these defaults by
+        disabling them as instructed below:
+    </p>
+        <p class="content__content">How do I disable auto update?</p>
 
+        <p class="content__content">How do I disable crash reporting?</p>
+        <p class="content__content">How do I disable usage reporting?</p>
+        <h3 class="content__heading third-heading--js"></h3>
+      </section>
+    </main>
+    <footer>
+        All rights reserved
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
