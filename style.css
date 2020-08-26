@@ -41,7 +41,8 @@ h1{
 
 .content {
     box-sizing: border-box;
-    min-width: 1000px;
-    padding: 5px 5px;
-    margin: 35px;
+    min-width: 2000px;
+    padding: 5px 35px;
+    display: inline-block;
+    
 }
