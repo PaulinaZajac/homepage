@@ -1,24 +1,42 @@
-body {
-  background: #e3e4db;
-  font-family: 'Barlow Condensed', sans-serif;
+html {
+  box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: rgb(233,231,218);
+background: linear-gradient(162deg, rgba(233,231,218,1) 0%, rgba(241,214,190,1) 35%, rgba(255,255,255,1) 100%);
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+
+
 h1 {
   color: #083f2f;
 }
 
 .header {
   background: #f4b9b2;
+  padding: 20px 20px;
   max-width: 200px;
   min-height: 200px;
-  padding: 20px 20px;
   border-radius: 50%;
-  margin: 100px;
+  margin-left: 60px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .main {
   background: white;
   box-sizing: border-box;
-  max-width: 1000px;
+  max-width: 300px;
   min-height: 1500px;
   margin: 35px auto;
 }
@@ -33,18 +51,22 @@ h1 {
 }
 
 .navigation {
-  padding: 50px 10px;
-  min-height: 100px;
+  display: block;
+  
+  
 }
 
 .navigation__link {
   color: #344055;
-  margin-left: 30px;
-  display: block;
- 
+  margin-left: 10px;
+  text-decoration: none;
+  
 }
 .navigation__link--homepage {
   color: #8fe9de;
+}
+.class--js {
+  
 }
 
 .content {
@@ -64,3 +86,93 @@ h1 {
   margin-top: 50px;
   max-width: 60%;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background: rgb(233,231,218);
+background: linear-gradient(162deg, rgba(233,231,218,1) 0%, rgba(227,143,226,1) 31%, rgba(255,255,255,1) 100%);
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 1fr);
+    column-gap: 30px;
+    row-gap: 16px;
+    
+  
+  }
+  
+  .grid__element {
+  padding: 20px;
+  background: hotpink;
+  }
+  
+  h1 {
+    color: #083f2f;
+  }
+  
+  .header {
+    background: #f4b9b2;
+    padding: 20px 20px;
+    max-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .main {
+    background: white;
+    box-sizing: border-box;
+    max-width: 1000px;
+    min-height: 1500px;
+    margin: 35px auto;
+  }
+  
+  .main__header {
+    padding: 5px 5px;
+    margin: 35px;
+  }
+  
+  .main__heading {
+    margin: 35px;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .navigation__link {
+    color: #344055;
+    margin-left: 10px;
+    text-decoration: none;
+    
+  }
+  .navigation__link--homepage {
+    color: #8fe9de;
+  }
+  .class--js {
+    
+  }
+  
+  .content {
+    margin: 35px;
+  }
+  
+  .content__heading {
+    margin: 35px;
+  }
+  
+  .content__content {
+    margin: 35px;
+  }
+  
+  .content__picture {
+    margin-left: 500px;
+    margin-top: 50px;
+    max-width: 60%;
+  }

@@ -5,10 +5,37 @@ console.log(
     `Hello I'm ${firstName} and I have ${age} years old`
     );
 
-    const heading = document.querySelector('.third-heading--js');
-    console.log(heading);
-
-    console.log(heading.innerHTML);
-    heading.innerHTML = 'blabla';
+    const emptyParagraph = document.querySelector('.third-heading--js');
     
-    console.log(heading.innerHTML);
+   emptyParagraph.innerHTML = 'No dzień dobry!';
+    
+
+   
+  function calculate(myNumber) {
+      console.log(`Wynik to ${myNumber}`);
+      return myNumber*10;
+  }
+
+
+  const myNumber = calculate(10);
+  console.log(myNumber);
+
+  function greet(age, firstName) {
+    console.log(
+        `Hello I'm ${firstName} and I have ${age} years old`
+        );
+  }
+
+  greet(age, firstName);
+ 
+  const button= document.querySelector('.action--js')
+  console.log(button)
+ 
+
+  button.addEventListener('click', () => {
+    const heading = document.querySelector(".main__heading--js");
+    heading.innerHTML = 'No dzień dobry!';
+    heading.classList.toggle('class--js');
+  });
+      
+
