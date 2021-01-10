@@ -14,10 +14,16 @@
 
   <body>
     <header class="header">
-      <nav class="navigation">
+      <nav class="navigation navigation--js">
         <a class="navigation__link" href="nauka-html.html">O mnie</a>
         <a class="navigation__link" href="historia.html">Historia</a>
+        <a class="navigation__link" href="historia.html">Historia</a>
+        <a class="navigation__link" href="historia.html">Historia</a>
+        <a class="navigation__link" href="historia.html">Historia</a>
       </nav>
+      <button class="hamburger hamburger--js">
+        menu
+      </button>
     </header>
     <main class="main">
       <header class="main__header">
@@ -77,6 +83,70 @@
         <p class="content__content">How do I disable usage reporting?</p>
         <h3 class="content__heading third-heading--js"></h3>
       </section>
+      <section class="content">
+      <form>
+        <h3 class="content__heading">Ankieta</h3>
+        <p class="content__content">
+          <label for="firstName">Your name:</label>
+          <input type="text" placeholder="enter your name" id="firstName" name="firstName"></p>
+    </p>
+    <p class="content__content">
+      <label for="lastName">Your last name:</label>
+      <input placeholder="enter your last name" id="lastName" name="firstName"></p>
+</p>
+  </form>
+
+  <fieldset>
+    <legend>
+      <h3 class="content__heading">Adress</h3>
+        <p class="content__content">
+          <label for="streetName">Street name:</label>
+          <input type="text" placeholder="enter your street name" id="streetName" name="firstName">
+    </p>
+    <p class="content__content">
+      <label for="cityName">Your city name:</label>
+      <input placeholder="enter your city name" id="cityName" name="cityName">
+</p>
+<p class="content__content">
+  <label for="phoneNumber">Your phone number:</label>
+  <input placeholder="enter your phone number" id="phoneNumber" name="phoneNumber" type="number">
+</p>
+<p class="content__content">
+  <label for="e-mail">Your e-mail:</label>
+  <input placeholder="enter your e-mail" id="e-mail" name="e-mail" type="email">
+</p>
+<p class="content__content">
+  <label for="e-mail">Range:</label>
+  <input id="range" 
+  class="form__input range--js"
+  name="range" 
+  type="range" 
+  min="0" 
+  max="100" 
+  step="10"
+  />
+</p>
+    </legend>
+  </fieldset>
+
+  <fieldset>
+    <legend>
+      <h3 class="content__heading">How do you do?</h3>
+        <p class="content__content">
+          <label>
+          <input name="pimpek" type="radio" value="good">
+          Good</label>
+        </p>
+    <p class="content__content">
+      <label>
+        <input name="pimpek" type="radio" value="bad">
+        Bad</label>
+</p>
+    </legend>
+  </fieldset>
+
+
+    </section>
     </main>
     <footer>All rights reserved</footer>
     <script src="main.js"></script>

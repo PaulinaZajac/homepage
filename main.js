@@ -35,7 +35,12 @@ console.log(
   button.addEventListener('click', () => {
     const heading = document.querySelector(".main__heading--js");
     heading.innerHTML = 'No dzień dobry!';
-    heading.classList.toggle('class--js');
+    heading.classList.toggle('class--js')
   });
-      
 
+  const hamburger = document.querySelector('.hamburger--js');
+
+  hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open');
+  })

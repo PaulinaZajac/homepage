@@ -23,17 +23,21 @@ h1 {
 .header {
   background: #f4b9b2;
   padding: 20px 20px;
-  max-width: 200px;
-  min-height: 200px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  margin-left: 60px;
+  
   margin-top: 60px;
   display: flex;
+  position: fixed; 
   justify-content: center;
+  top: 16px;
+  right: 50px;
   
 }
 
 .main {
+  
   background: white;
   box-sizing: border-box;
   max-width: 300px;
@@ -51,21 +55,35 @@ h1 {
 }
 
 .navigation {
+  padding: 16px;
+  display: none;
+}
+
+.navigation--open {
   display: block;
-  
-  
 }
 
 .navigation__link {
+  display: block;
   color: #344055;
-  margin-left: 10px;
   text-decoration: none;
-  
 }
+
+  
+
 .navigation__link--homepage {
   color: #8fe9de;
 }
+
+.navigation--open {
+  display:block;
+  
+}
+
+
+
 .class--js {
+  background-color: hotpink;
   
 }
 
@@ -85,6 +103,15 @@ h1 {
   margin-left: 500px;
   margin-top: 50px;
   max-width: 60%;
+}
+
+.hamburger--js {
+  right: 16px;
+}
+
+.hamburger {
+  border: none;
+  background: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -113,8 +140,8 @@ background: linear-gradient(162deg, rgba(233,231,218,1) 0%, rgba(227,143,226,1) 
   .header {
     background: #f4b9b2;
     padding: 20px 20px;
-    max-width: 200px;
-    min-height: 200px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-left: 60px;
     margin-top: 60px;
@@ -152,6 +179,12 @@ background: linear-gradient(162deg, rgba(233,231,218,1) 0%, rgba(227,143,226,1) 
     text-decoration: none;
     
   }
+
+  .content__heading::before {
+    content: "🌜"
+    
+  }
+
   .navigation__link--homepage {
     color: #8fe9de;
   }
@@ -176,3 +209,7 @@ background: linear-gradient(162deg, rgba(233,231,218,1) 0%, rgba(227,143,226,1) 
     margin-top: 50px;
     max-width: 60%;
   }
+
+.hamburger {
+  display: none;
+}
